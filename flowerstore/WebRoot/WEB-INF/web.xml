@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+   <welcome-file-list>
+    <welcome-file>shouye</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>manageServlet</servlet-name>
+  <servlet-class>com.itbaizhan.servlet.ManageServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+  <servlet-name>manageServlet</servlet-name>
+  <url-pattern>/manageServlet/*</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>shouyeServlet</servlet-name>
+  <servlet-class>com.itbaizhan.servlet.ShouyeServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+  <servlet-name>shouyeServlet</servlet-name>
+  <url-pattern>/shouye</url-pattern>
+  </servlet-mapping>
+
+
+	<servlet>
+  <servlet-name>indexServlet</servlet-name>
+  <servlet-class>com.itbaizhan.servlet.IndexServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+  <servlet-name>indexServlet</servlet-name>
+  <url-pattern>/indexServlet/*</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
